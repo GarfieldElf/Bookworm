@@ -1,0 +1,103 @@
+
+
+.nav-menu {
+    width: 250px;
+    height: 100vh;
+    justify-content: flex-start;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: #540D77;
+    transition: 850ms;
+}
+
+.nav-menu.active{
+
+left:0;
+transition:350ms;
+
+}
+
+
+
+.nav-text {
+  
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    padding: 20px 2px 3px 0px;
+
+
+
+}
+
+
+    .nav-text a {
+        margin-left:20px;
+        margin-top:10px;
+        text-decoration: none;
+        color: wheat;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+        .nav-text a:hover {
+            background: black;
+            width: 100%;
+            height:100%;
+        }
+
+.nav-menu.items{
+
+    width:100%;
+
+}
+
+
+.submenu {
+    
+    color:wheat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    height: 15px;
+    font-size: 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+    .submenu:hover {
+        background: black;
+            width: 100%;
+            
+    }
+
+
+.anamenu {
+    color: wheat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top:15px;
+    margin-bottom:5px;
+    list-style: none;
+    text-decoration: none;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 4px;
+
+}
+
+
+.anamenu:hover {
+    background: black;
+    width: 100%;
+}
