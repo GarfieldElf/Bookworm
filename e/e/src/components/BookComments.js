@@ -45,12 +45,12 @@ const BookComments = () => {
 
     const [open, setOpen] = useState(false);
 
-    const [value, setValue] = useState("Recommended"); //öneriliyor mu önerilmiyor mu
+    const [value, setValue] = useState("Recommended"); //Ã¶neriliyor mu Ã¶nerilmiyor mu
 
-    const newDate = new Date(); //bugünün tarihi
+    const newDate = new Date(); //bugÃ¼nÃ¼n tarihi
 
 
-    const [comment, setComment] = useState(""); //kitap için yorum
+    const [comment, setComment] = useState(""); //kitap iÃ§in yorum
 
     const onChangeComment = (event) => {
         setComment(event.target.value)
@@ -113,7 +113,7 @@ const BookComments = () => {
 
     function AddComment(c) {
 
-        if (c !== false) { //c.addedcomment'ini nasıl fonksiyona paslayacağız
+        if (c !== false) { //c.addedcomment'ini nasÃ½l fonksiyona paslayacaÃ°Ã½z
             var payload = {
 
                 bookId: books.bookId,
@@ -255,7 +255,7 @@ const BookComments = () => {
                 <DialogActions sx={{ bgcolor: "wheat" }}>
                
                    
-         <Button onClick={() => AddComment(tut)} variant="contained" sx={{ height: "40px", width: "100px", "&:hover": { backgroundColor: "#0E97A6" }, bgcolor: '#76ECE4', color: "black" }}>Send</Button>
+         <Button onClick={() => { AddComment(tut); handleClose() }} variant="contained" sx={{ height: "40px", width: "100px", "&:hover": { backgroundColor: "#0E97A6" }, bgcolor: '#76ECE4', color: "black" }}>Send</Button>
                           
                    
                 </DialogActions>
