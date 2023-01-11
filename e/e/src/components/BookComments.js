@@ -113,7 +113,7 @@ const BookComments = () => {
 
     function AddComment(c) {
 
-        if (c !== false) { //c.addedcomment'ini nasýl fonksiyona paslayacaðýz
+        if (c !== users.username) { 
             var payload = {
 
                 bookId: books.bookId,
@@ -264,7 +264,7 @@ const BookComments = () => {
             <Stack spacing={3} direction="column" style={{ display: "flex", justifyContent: "flex-start" }} mt={3} ml={35}>
                 {comments.filter(c => c.bookId === books.bookId).map((c) => {
                     const date = new Date(c.datee).toLocaleDateString();
-                    tut = c.addedComment;
+                    tut = c.username;
             
                     if (c.isRecommended === "Recommended")
                     
